@@ -1,0 +1,133 @@
+/* Default Styling Coded by Eli Taurel */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+body { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+
+img {
+    width: 50%;
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    color: #5A537B;
+    background: #F4F4F4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header button:first-of-type {
+    margin-right: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+header button:last-of-type {
+    background: #6943FF;
+}
+
+header button:first-of-type:hover {
+    background: #6943FF;
+    color: white;
+}
+
+header button {
+    display: flex;
+    font-size: 18px;
+    background: #273549;
+    color: white;
+    border: none;
+    padding: 0.7rem 0.6rem;
+    border-radius: 5px;
+}
+
+/* Main Styling */
+
+main {
+    background: #6943FF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main button {
+    background: #273549;
+    border: none;
+    padding: 0.7rem 0.6rem;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #CCC1FF;
+}
+
+main button:hover {
+    background: white;
+    cursor: pointer;
+}
+
+h2 {
+    color: white;
+}
+
+
+
+/* Footer Stlying */ 
+
+footer {
+    background: #F4F4F4;
+}
+
+footer h1 {
+    background: #FFFFFF;
+    color: #5A537B;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    #information p {
+        max-width: 95%;
+    }
+
+    img {
+        width: 95%;
+    }
+  }
+
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+    }
+  }  
